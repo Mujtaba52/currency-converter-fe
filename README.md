@@ -1,50 +1,79 @@
-# React + TypeScript + Vite
+# 🌍 React + TypeScript Currency Converter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple **Currency Converter** built using **React, TypeScript, and Vite**.  
+It allows users to convert currencies with support for **Finnish language** via **i18next**.  
+The backend service is powered by **Spring Boot** and leverages the **SWOP API (free tier)**.  
+<img width="1432" alt="image" src="https://github.com/user-attachments/assets/1841b0ae-8276-4648-accd-15bf16a607df" />
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Follow the steps below to **set up and run the project**.
 
-- Configure the top-level `parserOptions` property like this:
+---
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📥 Clone the Repository
+
+First, clone the frontend repository and navigate into the project directory:
+
+```sh
+git clone https://github.com/Mujtaba52/currency-converter-fe.git
+cd currency-converter-fe
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+---
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## 🔧 Setting Up the Project
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+Before running the project, ensure you meet the following prerequisites.
+
+### **📌 Prerequisites**
+- **Node.js 18+** installed on your system  
+- The **backend service** must be running at `http://localhost:8080`  
+  - Clone and start the backend service from here:  
+  ```sh
+  git clone https://github.com/Mujtaba52/currency-converter.git
+  cd currency-converter
+  ./mvnw clean package
+  java -jar target/currency-converter-0.0.1-SNAPSHOT.jar
+  ```
+
+---
+
+### **⚡ Install Dependencies**
+Once inside the frontend project, install the required dependencies:
+
+```sh
+npm install
 ```
+
+---
+
+### **🚀 Running the App in Development Mode**
+After installing dependencies, start the application:
+
+```sh
+npm run dev
+```
+
+The application will now be accessible at:  
+```
+http://localhost:5173
+```
+
+---
+
+## 🌎 **Localization Support**
+- The application includes **Finnish language support** via **i18next**.  
+- The language can be switched dynamically within the UI.  
+
+---
+
+## ⚠️ **Limitations**
+- Currently, **only EUR to other currencies** can be converted due to SWOP API free-tier limitations.  
+- **Error handling is not fully implemented** yet.  
+- Ensure that the **backend is running** before using the converter.  
+
+
