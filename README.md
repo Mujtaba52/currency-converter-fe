@@ -2,8 +2,9 @@
 
 This is a simple **Currency Converter** built using **React, TypeScript, and Vite**.  
 It allows users to convert currencies with support for **Finnish language** via **i18next**.  
-The backend service is powered by **Spring Boot** and leverages the **SWOP API (free tier)**.  
-<img width="1432" alt="image" src="https://github.com/user-attachments/assets/1841b0ae-8276-4648-accd-15bf16a607df" />
+The backend service is powered by **Spring Boot** and leverages the **SWOP API (free tier)**.
+
+<img width="1428" alt="image" src="https://github.com/user-attachments/assets/bdfb7026-8336-4793-8959-586bd326d209" />
 
 
 ---
