@@ -1,0 +1,10 @@
+{
+  "amount": "Amount",
+  "convertedAmount": "Amount to be converted",
+  "baseCurrency": "Currency",
+  "quoteCurrency": "Currency to be converted",
+  "error": "An error occurred",
+  "changeLanguage": "Change Language",
+  "swapCurrencies": "Swap Currencies",
+  "CurrencyConverter": "Currency Converter"
+}

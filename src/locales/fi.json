@@ -1,0 +1,10 @@
+{
+  "amount": "Määrä",
+  "convertedAmount": "Muunnettava määrä",
+  "baseCurrency": "Valuutta",
+  "quoteCurrency": "Muunnettava valuutta",
+  "error": "Tapahtui virhe",
+  "changeLanguage": "Vaihda kieltä",
+  "swapCurrencies": "Vaihda valuutat",
+  "CurrencyConverter":"Valuuttamuunnin"
+}
