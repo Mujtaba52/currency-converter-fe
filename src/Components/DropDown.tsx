@@ -17,7 +17,7 @@ interface CurrencySelectProps {
 }
 
 const CurrencySelect: React.FC<CurrencySelectProps> = ({ currencies, label, currencyCode, onChange }) => {
-  const [selectedCurrency, setSelectedCurrency] = useState<Currency | null>(null);
+  const [selectedCurrency, setSelectedCurrency] = useState<Currency | null>(currencies?.find(currency => currency.currencyCode === currencyCode) ?? null);
 
   return (
     <Autocomplete
@@ -27,7 +27,7 @@ const CurrencySelect: React.FC<CurrencySelectProps> = ({ currencies, label, curr
       autoHighlight
       getOptionLabel={(option) => `${option.currencyName}`}
       value={currencies.find((currency)=>currency.currencyCode==currencyCode)}
-      onChange={(event, newValue) => {
+      onChange={(_, newValue) => {
         setSelectedCurrency(newValue);
         if (newValue) {
           onChange(newValue.currencyCode);

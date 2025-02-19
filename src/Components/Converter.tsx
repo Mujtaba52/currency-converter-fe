@@ -63,7 +63,7 @@ const Converter = () => {
                 id="outlined-number"
                 label={t("amount")}
                 value={amount}
-                onChange={(e) => setAmount(parseFloat(e.target.value) || 0)}
+                onChange={(e) => setAmount(parseFloat(e.target.value))}
                 type="number"/>
             </div>
             <div className='flex justify-center'>
@@ -80,7 +80,7 @@ const Converter = () => {
                 id="outlined-number"
                 label={t("convertedAmount")}
                 value={convertedAmount.toFixed(5)}
-                onChange={(e) => setAmount(parseFloat(e.target.value) || 0)}
+                onChange={(e) => setAmount(parseFloat(e.target.value))}
                 type="number"/>
             </div>
           </div>
