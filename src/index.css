@@ -1,5 +1,5 @@
-@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Timmana&display=swap');
+@import "tailwindcss";
 
 body {
   font-family: 'Timmana', sans-serif;
