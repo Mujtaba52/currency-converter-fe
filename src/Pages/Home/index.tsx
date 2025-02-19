@@ -1,3 +1,4 @@
+import AnnouncementBar from '../../Components/AnnouncementBar'
 import Converter from '../../Components/Converter'
 import Header from '../../Components/Header'
 
@@ -6,6 +7,7 @@ const Home = () => {
     < >
       <Header />
       <Converter />
+      <AnnouncementBar />
     </>
   )
 }
